@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/username/mlops-salary-predictor.git'
+                git branch: 'master', url: 'https://github.com/m-tayyab-naseem/mlops-salary-predictor-model.git'
             }
         }
         stage('Build Docker Image') {
