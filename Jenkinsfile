@@ -26,12 +26,12 @@ pipeline {
     }
     post {
         success {
-            mail to: 'admin@example.com',
+            mail to: 'tayyabnassem246@gmail.com',
                  subject: "Build Successful: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                  body: "Docker image pushed to %IMAGE_NAME%:%BUILD_NUMBER%"
         }
         failure {
-            mail to: 'admin@example.com',
+            mail to: 'tayyabnassem246@gmail.com',
                  subject: "Build Failed: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                  body: "Please check the Jenkins logs."
         }
